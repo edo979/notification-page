@@ -59,7 +59,7 @@ const notifications = [
       img: '/public/assets/images/avatar-kimberly-smith.webp',
     },
     text: 'commented on your picture',
-    payload: { type: 'img', url: './assets/images/image-chess' },
+    payload: { type: 'img', url: '/public/assets/images/image-chess.webp' },
     time: '1 week ago',
   },
   {
