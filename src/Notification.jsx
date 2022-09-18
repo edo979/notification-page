@@ -1,5 +1,5 @@
 function Notification() {
-  return <div>Notification</div>
+  return <li>Notification</li>
 }
 
 export default Notification

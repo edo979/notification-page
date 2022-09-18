@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Notification from './Notification'
 
+import './scss/style.scss'
+
 function App() {
   const [state, setState] = useState({ notifications: 0 })
 
