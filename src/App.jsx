@@ -30,7 +30,7 @@ const notifications = [
   },
   {
     id: 4,
-    read: false,
+    read: true,
     user: 'Rizky Hasanuddin',
     text: 'sent you a private message',
     payload: {
@@ -41,15 +41,15 @@ const notifications = [
   },
   {
     id: 5,
-    read: false,
+    read: true,
     user: 'Kimberly Smith',
     text: 'commented on your picture',
-    payload: { type: 'img', url: '#' },
+    payload: { type: 'img', url: './assets/images/image-chess' },
     time: '1 week ago',
   },
   {
     id: 6,
-    read: false,
+    read: true,
     user: 'Nathan Peterson',
     text: 'react to your recent post',
     payload: {
@@ -61,7 +61,7 @@ const notifications = [
   },
   {
     id: 7,
-    read: false,
+    read: true,
     user: 'Anna Kim',
     text: 'left the group',
     payload: { type: 'link', text: 'Chess Club', url: '#' },
