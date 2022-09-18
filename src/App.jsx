@@ -7,7 +7,10 @@ const notifications = [
   {
     id: 1,
     read: false,
-    user: 'Mark Webber',
+    user: {
+      name: 'Mark Webber',
+      img: '/public/assets/images/avatar-mark-webber.webp',
+    },
     text: 'react to your recent post',
     payload: { type: 'link', text: 'My first tournament today!', url: '#' },
     time: '1m ago',
@@ -15,7 +18,10 @@ const notifications = [
   {
     id: 2,
     read: false,
-    user: 'Angela Gray',
+    user: {
+      name: 'Angela Gray',
+      img: '/public/assets/images/avatar-angela-gray.webp',
+    },
     text: 'followed you',
     payload: { type: 'message' },
     time: '5m ago',
@@ -23,7 +29,10 @@ const notifications = [
   {
     id: 3,
     read: false,
-    user: 'Jacob Thompson',
+    user: {
+      name: 'Jacob Thompson',
+      img: '/public/assets/images/avatar-jacob-thompson.webp',
+    },
     text: 'has joined your group',
     payload: { type: 'link', text: 'Chess Club', url: '#' },
     time: '1 day ago',
@@ -31,7 +40,10 @@ const notifications = [
   {
     id: 4,
     read: true,
-    user: 'Rizky Hasanuddin',
+    user: {
+      name: 'Rizky Hasanuddin',
+      img: '/public/assets/images/avatar-rizky-hasanuddin.webp',
+    },
     text: 'sent you a private message',
     payload: {
       type: 'private-msg',
@@ -42,7 +54,10 @@ const notifications = [
   {
     id: 5,
     read: true,
-    user: 'Kimberly Smith',
+    user: {
+      name: 'Kimberly Smith',
+      img: '/public/assets/images/avatar-kimberly-smith.webp',
+    },
     text: 'commented on your picture',
     payload: { type: 'img', url: './assets/images/image-chess' },
     time: '1 week ago',
@@ -50,7 +65,10 @@ const notifications = [
   {
     id: 6,
     read: true,
-    user: 'Nathan Peterson',
+    user: {
+      name: 'Nathan Peterson',
+      img: '/public/assets/images/avatar-nathan-peterson.webp',
+    },
     text: 'react to your recent post',
     payload: {
       type: 'link',
@@ -62,7 +80,10 @@ const notifications = [
   {
     id: 7,
     read: true,
-    user: 'Anna Kim',
+    user: {
+      name: 'Anna Kim',
+      img: '/public/assets/images/avatar-anna-kim.webp',
+    },
     text: 'left the group',
     payload: { type: 'link', text: 'Chess Club', url: '#' },
     time: '2 weeks ago',
