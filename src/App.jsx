@@ -5,6 +5,7 @@ import './scss/style.scss'
 
 const notifications = [
   {
+    id: 1,
     read: false,
     user: 'Mark Webber',
     text: 'react to your recent post',
@@ -12,6 +13,7 @@ const notifications = [
     time: '1m ago',
   },
   {
+    id: 2,
     read: false,
     user: 'Angela Gray',
     text: 'followed you',
@@ -19,6 +21,7 @@ const notifications = [
     time: '5m ago',
   },
   {
+    id: 3,
     read: false,
     user: 'Jacob Thompson',
     text: 'has joined your group',
@@ -26,6 +29,7 @@ const notifications = [
     time: '1 day ago',
   },
   {
+    id: 4,
     read: false,
     user: 'Rizky Hasanuddin',
     text: 'sent you a private message',
@@ -33,9 +37,10 @@ const notifications = [
       type: 'private-msg',
       text: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.`,
     },
-    time: '5 days',
+    time: '5 days ago',
   },
   {
+    id: 5,
     read: false,
     user: 'Kimberly Smith',
     text: 'commented on your picture',
@@ -43,6 +48,7 @@ const notifications = [
     time: '1 week ago',
   },
   {
+    id: 6,
     read: false,
     user: 'Nathan Peterson',
     text: 'react to your recent post',
@@ -54,6 +60,7 @@ const notifications = [
     time: '2 weeks ago',
   },
   {
+    id: 7,
     read: false,
     user: 'Anna Kim',
     text: 'left the group',
@@ -63,7 +70,7 @@ const notifications = [
 ]
 
 function App() {
-  const [state, setState] = useState({ notifications: 0 })
+  const [state, setState] = useState({ notifications })
 
   return (
     <>
@@ -76,7 +83,9 @@ function App() {
 
       <main>
         <ul className="notification-list">
-          <Notification />
+          {state.notifications.map((n) => (
+            <Notification key={n.id} data={n} />
+          ))}
         </ul>
       </main>
     </>
