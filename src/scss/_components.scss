@@ -1,0 +1,19 @@
+.notification-list {
+  > li:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.card {
+  --f-justify: start;
+
+  &_img {
+    width: 45px;
+  }
+
+  &_body {
+    --f-direction: column;
+    --f-align: start;
+    --f-gap: 0;
+  }
+}
