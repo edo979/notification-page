@@ -46,8 +46,8 @@ const notifications = [
     },
     text: 'sent you a private message',
     payload: {
-      type: 'private-msg',
-      text: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.`,
+      type: 'msg',
+      msg: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.`,
     },
     time: '5 days ago',
   },

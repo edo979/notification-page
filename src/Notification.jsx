@@ -26,6 +26,7 @@ function Notification({ data: { user, text, time, payload } }) {
             )}
           </div>
           <div className="card_info">{time}</div>
+          {payload.type === 'msg' && <p>{payload.msg}</p>}
         </div>
       </div>
 
