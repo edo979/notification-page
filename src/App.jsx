@@ -28,7 +28,7 @@ const notifications = [
   },
   {
     id: 3,
-    read: false,
+    isRead: false,
     user: {
       name: 'Jacob Thompson',
       img: '/public/assets/images/avatar-jacob-thompson.webp',
@@ -39,7 +39,7 @@ const notifications = [
   },
   {
     id: 4,
-    read: true,
+    isRead: true,
     user: {
       name: 'Rizky Hasanuddin',
       img: '/public/assets/images/avatar-rizky-hasanuddin.webp',
@@ -53,7 +53,7 @@ const notifications = [
   },
   {
     id: 5,
-    read: true,
+    isRead: true,
     user: {
       name: 'Kimberly Smith',
       img: '/public/assets/images/avatar-kimberly-smith.webp',
@@ -64,7 +64,7 @@ const notifications = [
   },
   {
     id: 6,
-    read: true,
+    isRead: true,
     user: {
       name: 'Nathan Peterson',
       img: '/public/assets/images/avatar-nathan-peterson.webp',
@@ -79,7 +79,7 @@ const notifications = [
   },
   {
     id: 7,
-    read: true,
+    isRead: true,
     user: {
       name: 'Anna Kim',
       img: '/public/assets/images/avatar-anna-kim.webp',

@@ -23,8 +23,6 @@ body {
   padding: 15px;
   border-radius: 10px;
 
-  background-color: hsl(var(--clr-neutral-800));
-
   &_img {
     width: 40px;
     align-self: start;
@@ -44,5 +42,15 @@ body {
   &_content-img {
     margin-left: auto;
     height: 50px;
+  }
+
+  &_unread-dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.4rem;
+
+    border-radius: 50%;
+    background-color: hsl(var(--clr-primary-red));
   }
 }
