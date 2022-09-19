@@ -1,16 +1,16 @@
-@font-face {
-  font-family: 'jakarta';
-  src: url('/public/assets/fonts/static/PlusJakartaSans-ExtraBold.ttf')
-    format('truetype');
-  font-weight: bold;
-}
+// @font-face {
+//   font-family: 'jakarta';
+//   src: url('/public/assets/fonts/static/PlusJakartaSans-ExtraBold.ttf')
+//     format('truetype');
+//   font-weight: bold;
+// }
 
-@font-face {
-  font-family: 'jakarta';
-  src: url('/public/assets/fonts/static/PlusJakartaSans-Medium.ttf')
-    format('truetype');
-  font-weight: normal;
-}
+// @font-face {
+//   font-family: 'jakarta';
+//   src: url('/public/assets/fonts/static/PlusJakartaSans-Medium.ttf')
+//     format('truetype');
+//   font-weight: normal;
+// }
 
 @font-face {
   font-family: 'jakarta';
@@ -21,22 +21,51 @@
 }
 
 :root {
-  --clr-primary-red: (1, 90%, 64%);
-  --clr-primary-red: (219, 85%, 26%);
+  --clr-primary-red: 1, 90%, 64%;
+  --clr-primary-blue: 219, 85%, 2%;
 
-  --clr-neutral-900: (0, 0%, 100%);
-  --clr-neutral-800: (210, 60%, 98%);
-  --clr-neutral-700: (211, 68%, 94%);
-  --clr-neutral-600: (205, 33%, 90%);
-  --clr-neutral-500: (219, 14%, 63%);
-  --clr-neutral-400: (219, 12%, 42%);
-  --clr-neutral-400: (224, 21%, 14%);
+  --clr-neutral-900: 0, 0%, 100%;
+  --clr-neutral-800: 210, 60%, 98%;
+  --clr-neutral-700: 211, 68%, 94%;
+  --clr-neutral-600: 205, 33%, 90%;
+  --clr-neutral-500: 219, 14%, 63%;
+  --clr-neutral-400: 219, 12%, 42%;
+  --clr-neutral-300: 224, 21%, 14%;
 
-  --fs-400: 0.95rem;
-  --fs-500: 1rem;
+  --fs-400: 0.9rem;
+  --fs-500: 0.9rem;
   --fs-600: 1.25rem;
 }
 
+// Typography
 body {
   font-family: 'jakarta', sans-serif;
+  font-size: var(--fs-400);
+  font-weight: 500;
+  color: hsl(var(--clr-neutral-400));
+}
+
+h1 {
+  font-size: var(--fs-600);
+  color: hsl(var(--clr-neutral-300));
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(var(--clr-neutral-400));
+}
+
+// Button
+.btn {
+  border: 0;
+
+  font-size: var(--fs-500);
+
+  background-color: transparent;
+
+  &-text {
+    color: hsl(var(--clr-neutral-400));
+    font-weight: 500;
+  }
 }
