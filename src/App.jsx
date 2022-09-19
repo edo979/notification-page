@@ -105,12 +105,10 @@ function App() {
   return (
     <>
       <header className="header | flex">
-        <h1>
-          Notifications{' '}
-          <span className="badge">
-            {state.filter((notificaton) => !notificaton.isRead).length}
-          </span>
-        </h1>
+        <h1>Notifications</h1>
+        <span className="badge badge-primary">
+          {state.filter((notificaton) => !notificaton.isRead).length}
+        </span>
         <button className="btn btn-text" onClick={handleReadAll}>
           Mark all as read
         </button>

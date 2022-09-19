@@ -11,5 +11,12 @@
 }
 
 .header {
+  --f-gap: 0.5rem;
+  --f-align: end;
+
   margin-block-end: 1.5rem;
+
+  .badge {
+    margin-right: auto;
+  }
 }
