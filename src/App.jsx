@@ -91,7 +91,16 @@ const notifications = [
 ]
 
 function App() {
-  const [state, setState] = useState({ notifications })
+  const [state, setState] = useState(notifications)
+
+  function handleReadAll() {
+    setState((prev) =>
+      prev.map((notificaton) => {
+        if (!notificaton.isRead) notificaton.isRead = true
+        return notificaton
+      })
+    )
+  }
 
   return (
     <>
@@ -99,12 +108,14 @@ function App() {
         <h1>
           Notifications <span className="badge">3</span>
         </h1>
-        <button className="btn btn-text">Mark all as read</button>
+        <button className="btn btn-text" onClick={handleReadAll}>
+          Mark all as read
+        </button>
       </header>
 
       <main>
         <ul className="notification-list">
-          {state.notifications.map((n) => (
+          {state.map((n) => (
             <Notification key={n.id} data={n} />
           ))}
         </ul>
