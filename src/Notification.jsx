@@ -17,7 +17,7 @@ function Notification({ data: { user, text, time, payload } }) {
 
         <div className="card_content">
           <div className="card_text">
-            <span>{user.name} </span>
+            <span className="text-dark text-bold">{user.name} </span>
 
             <span>{text} </span>
 
@@ -25,7 +25,7 @@ function Notification({ data: { user, text, time, payload } }) {
               <a href={payload.url}>{payload.text}</a>
             )}
           </div>
-          <div className="card_info">{time}</div>
+          <div className="card_info | text-light">{time}</div>
           {payload.type === 'msg' && <p>{payload.msg}</p>}
         </div>
       </div>

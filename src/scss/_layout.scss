@@ -1,5 +1,5 @@
 .main-container {
-  padding: 20px;
+  padding: 1.5rem 1rem;
 }
 
 .flex {
@@ -8,4 +8,8 @@
   justify-content: var(--f-justify, space-between);
   align-items: var(--f-align, center);
   gap: var(--f-gap, 1rem);
+}
+
+.header {
+  margin-block-end: 1.5rem;
 }

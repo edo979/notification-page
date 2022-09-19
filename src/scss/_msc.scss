@@ -47,6 +47,7 @@ body {
 
 h1 {
   font-size: var(--fs-600);
+  font-weight: 800;
   color: hsl(var(--clr-neutral-300));
 }
 
@@ -68,4 +69,17 @@ a {
     color: hsl(var(--clr-neutral-400));
     font-weight: 500;
   }
+}
+
+// Utility
+.text-dark {
+  color: hsl(var(--clr-neutral-300));
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-light {
+  color: hsl(var(--clr-neutral-500));
 }
