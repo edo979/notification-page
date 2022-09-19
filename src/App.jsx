@@ -6,7 +6,7 @@ import './scss/style.scss'
 const notifications = [
   {
     id: 1,
-    read: false,
+    isRead: false,
     user: {
       name: 'Mark Webber',
       img: '/public/assets/images/avatar-mark-webber.webp',
@@ -17,7 +17,7 @@ const notifications = [
   },
   {
     id: 2,
-    read: false,
+    isRead: false,
     user: {
       name: 'Angela Gray',
       img: '/public/assets/images/avatar-angela-gray.webp',
@@ -106,7 +106,10 @@ function App() {
     <>
       <header className="header | flex">
         <h1>
-          Notifications <span className="badge">3</span>
+          Notifications{' '}
+          <span className="badge">
+            {state.filter((notificaton) => !notificaton.isRead).length}
+          </span>
         </h1>
         <button className="btn btn-text" onClick={handleReadAll}>
           Mark all as read
