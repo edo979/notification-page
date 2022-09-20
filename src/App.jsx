@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Notification from './Notification'
 
 import './scss/style.scss'
@@ -92,21 +92,37 @@ const notifications = [
 
 function App() {
   const [state, setState] = useState(notifications)
+  const notificationEl = useRef()
 
   function handleReadAll() {
-    setState((prev) =>
-      prev.map((notificaton) => {
-        if (!notificaton.isRead) notificaton.isRead = true
-        return notificaton
-      })
-    )
+    const numOfNotification = state.filter(
+      (notificaton) => !notificaton.isRead
+    ).length
+
+    if (numOfNotification > 0) {
+      notificationEl.current.classList.add('animate')
+    }
+
+    setTimeout(() => {
+      notificationEl.current.classList.remove('animate')
+
+      setState((prev) =>
+        prev.map((notif) => {
+          if (!notif.isRead) {
+            notif.isRead = true
+          }
+
+          return notif
+        })
+      )
+    }, 222)
   }
 
   return (
     <>
       <header className="header | flex">
         <h1>Notifications</h1>
-        <span className="badge badge-primary">
+        <span className="badge badge-primary" ref={notificationEl}>
           {state.filter((notificaton) => !notificaton.isRead).length}
         </span>
         <button className="btn btn-text" onClick={handleReadAll}>
