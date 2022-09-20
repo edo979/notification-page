@@ -9,7 +9,7 @@ const notifications = [
     isRead: false,
     user: {
       name: 'Mark Webber',
-      img: '/public/assets/images/avatar-mark-webber.webp',
+      img: 'assets/images/avatar-mark-webber.webp',
     },
     text: 'react to your recent post',
     payload: { type: 'link', text: 'My first tournament today!', url: '#' },
@@ -20,7 +20,7 @@ const notifications = [
     isRead: false,
     user: {
       name: 'Angela Gray',
-      img: '/public/assets/images/avatar-angela-gray.webp',
+      img: 'assets/images/avatar-angela-gray.webp',
     },
     text: 'followed you',
     payload: { type: 'message' },
@@ -31,7 +31,7 @@ const notifications = [
     isRead: false,
     user: {
       name: 'Jacob Thompson',
-      img: '/public/assets/images/avatar-jacob-thompson.webp',
+      img: 'assets/images/avatar-jacob-thompson.webp',
     },
     text: 'has joined your group',
     payload: { type: 'link', text: 'Chess Club', url: '#', important: true },
@@ -42,7 +42,7 @@ const notifications = [
     isRead: true,
     user: {
       name: 'Rizky Hasanuddin',
-      img: '/public/assets/images/avatar-rizky-hasanuddin.webp',
+      img: 'assets/images/avatar-rizky-hasanuddin.webp',
     },
     text: 'sent you a private message',
     payload: {
@@ -56,10 +56,10 @@ const notifications = [
     isRead: true,
     user: {
       name: 'Kimberly Smith',
-      img: '/public/assets/images/avatar-kimberly-smith.webp',
+      img: 'assets/images/avatar-kimberly-smith.webp',
     },
     text: 'commented on your picture',
-    payload: { type: 'img', url: '/public/assets/images/image-chess.webp' },
+    payload: { type: 'img', url: 'assets/images/image-chess.webp' },
     time: '1 week ago',
   },
   {
@@ -67,7 +67,7 @@ const notifications = [
     isRead: true,
     user: {
       name: 'Nathan Peterson',
-      img: '/public/assets/images/avatar-nathan-peterson.webp',
+      img: 'assets/images/avatar-nathan-peterson.webp',
     },
     text: 'react to your recent post',
     payload: {
@@ -82,7 +82,7 @@ const notifications = [
     isRead: true,
     user: {
       name: 'Anna Kim',
-      img: '/public/assets/images/avatar-anna-kim.webp',
+      img: 'assets/images/avatar-anna-kim.webp',
     },
     text: 'left the group',
     payload: { type: 'link', text: 'Chess Club', url: '#', important: true },
