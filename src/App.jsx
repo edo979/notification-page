@@ -34,7 +34,7 @@ const notifications = [
       img: '/public/assets/images/avatar-jacob-thompson.webp',
     },
     text: 'has joined your group',
-    payload: { type: 'link', text: 'Chess Club', url: '#' },
+    payload: { type: 'link', text: 'Chess Club', url: '#', important: true },
     time: '1 day ago',
   },
   {
@@ -85,7 +85,7 @@ const notifications = [
       img: '/public/assets/images/avatar-anna-kim.webp',
     },
     text: 'left the group',
-    payload: { type: 'link', text: 'Chess Club', url: '#' },
+    payload: { type: 'link', text: 'Chess Club', url: '#', important: true },
     time: '2 weeks ago',
   },
 ]

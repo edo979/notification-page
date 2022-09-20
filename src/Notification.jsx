@@ -11,7 +11,13 @@ function Notification({ data: { user, text, time, payload, isRead } }) {
             <span> {text}</span>
 
             {payload.type === 'link' && (
-              <a href={payload.url}> {payload.text}</a>
+              <a
+                className={payload.important && 'link-variant-1'}
+                href={payload.url}
+              >
+                {' '}
+                {payload.text}
+              </a>
             )}
 
             {!isRead && <span className="card_unread-dot"></span>}
@@ -20,7 +26,7 @@ function Notification({ data: { user, text, time, payload, isRead } }) {
           <div className="card_info | text-light">{time}</div>
 
           {/* Private message */}
-          {payload.type === 'msg' && <p>{payload.msg}</p>}
+          {payload.type === 'msg' && <p className="box">{payload.msg}</p>}
         </div>
       </div>
 
