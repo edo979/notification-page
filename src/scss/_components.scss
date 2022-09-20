@@ -101,3 +101,13 @@ body {
 .link-variant-1 {
   color: hsl(var(--clr-primary-blue));
 }
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
